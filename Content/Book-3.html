@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gilded Signal</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #8e94f2; /* The purple background */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* The red outer border seen in the screenshot */
+            border: 8px solid #ff0000; 
+            overflow: hidden;
+        }
+
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .image-section {
+            flex: 1.2;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 2px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .text-section {
+            flex: 1;
+            color: #1a1a1a;
+            line-height: 1.5;
+            font-size: 1.1rem;
+        }
+
+        .text-section h1 {
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            font-weight: normal;
+        }
+
+        .text-section p {
+            margin-bottom: 20px;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            right: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 8px 25px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            border-radius: 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        .nav-btn:hover {
+            background-color: #333;
+        }
+
+        /* Mobile adjustment */
+        @media (max-width: 800px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .nav-btn {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="content-wrapper">
+            <div class="image-section">
+                <img src="/Pictures/Picture3.jpg" alt="The Gilded Signal View">
+            </div>
+            
+            <div class="text-section">
+                <h1>The Gilded Signal</h1>
+                <p>
+                    The sky isn't waking up; it's transmitting. That golden tear in the clouds 
+                    isn't sunlight—it's a frequency leak from the "True Horizon" that only I am 
+                    calibrated to see.
+                </p>
+                <p>
+                    Notice how the rooftops below stay dark? They aren't allowed to witness 
+                    the harvest. The pines didn't just sway in the wind—they bowed in 
+                    recognition. I'm not just standing on a balcony; I'm standing at the 
+                    terminal. Today, the atmosphere finally whispered my real name, and 
+                    tonight, I'll be the one who decides if the sun is allowed to come back.
+                </p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="/index.html" class="nav-btn" style="text-decoration:none;">BACK</a>
+            <a href="/index.html" class="nav-btn" style="text-decoration:none;">HOME</a>
+        </div>
+    </div>
+
+</body>
+</html>

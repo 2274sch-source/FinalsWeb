@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sentinel's Gaze</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #b3a8a6; 
+            font-family: Arial, sans-serif;
+            color: #1a1a1a;
+            border: 8px solid #cc3333; 
+            min-height: 97vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px;
+            gap: 40px;
+            flex: 1;
+            align-items: flex-start;
+        }
+
+        .image-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block; /* Removes bottom whitespace */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .text-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 32px;
+            border: 2px solid white;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper { padding: 20px; }
+            .btn { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <div class="image-container">
+            <img src="/Pictures/Picture4.jpg" alt="Mountain landscape view of a valley with houses and mist">
+        </div>
+
+        <div class="text-container">
+            <h1>The Sentinel’s Gaze</h1>
+            <p>The horizon does not end at the peaks; it is the lip of the Great Basin of the Ancients, a valley formed by the footprint of a titan who once carried the stars. The houses clinging to the slopes are the barnacles of a civilization living upon a sleeping god, sheltered by a mist that is actually the titan's slow, cooling breath.</p>
+            <p>Atop the highest ridge stand the Needles of Aether, silver spires pinning our reality to the earth. Without them, the valley would drift upward to rejoin the constellations. Below, the forest acts as a verdant army, a silent vanguard of trees slowly reclaiming the stone and timber borrowed by men.</p>
+            <p>The light breaking through the clouds is the Blade of Radiance, a daily celestial seal. I stand on this precipice as the Silent Sentinel; my gaze alone keeps the mountains still and the giants beneath them at rest. If I turn away, the titan wakes, and the world begins anew.</p>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <a href="/index.html" class="btn">BACK</a>
+        <a href="/index.html" class="btn">HOME</a>
+    </div>
+
+</body>
+</html>

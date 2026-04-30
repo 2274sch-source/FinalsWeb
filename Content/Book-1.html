@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gravity of Color</title>
+    <style>
+        :root {
+            --bg-color: #4a4644;
+            --text-color: #ffffff;
+            --button-bg: #000000;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Container for the image and text */
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px;
+            gap: 40px;
+            flex: 1;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        /* Image styling */
+        .image-container {
+            flex: 1;
+            min-width: 320px;
+            max-width: 700px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+        }
+
+        /* Text styling */
+        .text-container {
+            flex: 1;
+            min-width: 320px;
+            max-width: 550px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.95);
+            text-align: justify;
+        }
+
+        /* Navigation buttons footer */
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 40px;
+            background: transparent;
+        }
+
+        .nav-btn {
+            background-color: var(--button-bg);
+            color: white;
+            border: 3px solid white;
+            padding: 8px 25px;
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            background-color: #333;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        @media (max-width: 900px) {
+            .content-wrapper {
+                padding: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container, .text-container {
+                max-width: 100%;
+            }
+            .footer-nav {
+                padding: 20px;
+            }
+            .nav-btn {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <div class="image-container">
+            <img src="/Pictures/Picture1.jpg" alt="Stobosa Hillside Homes Artwork">
+        </div>
+
+        <div class="text-container">
+            <h1>The Gravity of Color</h1>
+            
+            <p>The houses weren't built; they were spilled. Decades ago, a celestial painter tipped a palette of "Morning Blue" and "Marigold" over the ridge, and the earth grew architecture just to catch the drips.</p>
+            
+            <p>As the clock strikes 06:07, the hillside begins to hum. Those power lines aren't for electricity—they are the strings of a massive mountain harp. My job as the Chief Tuner is to keep the colors balanced; if the pinks get too heavy or the blues too loud, the entire village will lose its gravity and drift into the clouds.</p>
+            
+            <p>The families inside the yellow-lit rooms aren't sleeping. They are "Sun Reservoirs," breathing in the leftover light from yesterday to fuel the dawn. Meanwhile, the painted butterflies on the walls peel themselves off to hunt stray nightmares, turning them into the soft, pastel clouds rolling over the peak.</p>
+            
+            <p>I have to hurry. The bees on the blue house are starting to vibrate, and if I don't tighten the wires, the mountain will start singing opera again. Don't stare too long at the sunflower mural—if you catch its eye, you might just fall upward into the sky.</p>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <a href="#" class="nav-btn">BACK</a>
+        <a href="#" class="nav-btn">HOME</a>
+    </div>
+
+</body>
+</html>
