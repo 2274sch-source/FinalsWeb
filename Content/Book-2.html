@@ -24,7 +24,6 @@
             min-height: 100vh;
         }
 
-        /* Main Container with red border */
         .page-container {
             width: 95vw;
             height: 90vh;
@@ -35,7 +34,6 @@
             overflow: hidden;
         }
 
-        /* Main Content Layout */
         .content {
             display: flex;
             flex: 1;
@@ -43,10 +41,9 @@
             gap: 40px;
             align-items: center;
         }
-
-        /* Left side: The Image */
+        
         .image-container {
-            flex: 1.2; /* Slightly wider to accommodate the landscape photo */
+            flex: 1.2; 
             display: flex;
             justify-content: center;
         }
@@ -59,7 +56,6 @@
             display: block;
         }
 
-        /* Right side: The Text */
         .text-container {
             flex: 1;
             color: var(--text-color);
@@ -80,7 +76,6 @@
             text-align: justify;
         }
 
-        /* Bottom Navigation Buttons */
         .navigation {
             display: flex;
             justify-content: space-between;
@@ -106,7 +101,6 @@
             opacity: 0.8;
         }
 
-        /* Responsive adjustments for mobile */
         @media (max-width: 850px) {
             .content {
                 flex-direction: column;
