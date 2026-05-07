@@ -20,36 +20,58 @@
         .story-menu li { margin: 15px 0; }
         .story-link { color: #000; text-decoration: none; font-size: 1.5rem; font-weight: bold; border-bottom: 2px solid transparent; transition: 0.3s; }
         .story-link:hover { border-bottom: 2px solid #d00000; color: #d00000; }   
+        
+         /* Tablet */
+        @media screen and (max-width: 992px) {
+
+            .title-container {
+                padding: 30px 50px;
+            }
+
+            .title-container h1 {
+                font-size: 2.2rem;
+            }
+
+            .nav-btn {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Mobile */
+        @media screen and (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .nav-btn {
+                font-size: 1rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .title-container {
+                padding: 20px;
+            }
+
+            .title-container h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .story-link {
+                font-size: 1.1rem;
+            }
+
+            .description {
+                font-size: 0.95rem;
+                text-align: center;
+            }
+        }
+        
     </style>
-
-<head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-
-    /* Desktop */
-    body {
-      font-size: 24px;
-    }
-
-    /* Tablet */
-    @media screen and (max-width: 992px) {
-      body {
-        font-size: 20px;
-      }
-    }
-
-    /* Mobile */
-    @media screen and (max-width: 600px) {
-      body {
-        font-size: 14px;
-      }
-    }
-
-  </style>
-
-</head>
     
 </head>
 <body>
